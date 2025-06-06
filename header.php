@@ -12,9 +12,9 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li <? if($nav == 1){ ?>class="active" <?php }?>><a href="index.php">Home</a></li>
-                        <li <? if($nav == 2){ ?>class="active" <?php }?>><a href="approach.php">Our Approach</a></li>
-                        <li <? if($nav == 3){ ?>class="active" <?php }?>><a href="contact.php">Contact</a></li>
+                        <li <?php if($nav == 1){ ?>class="active" <?php }?>><a href="index.php">Home</a></li>
+                        <li <?php if($nav == 2){ ?>class="active" <?php }?>><a href="approach.php">Our Approach</a></li>
+                        <li <?php if($nav == 3){ ?>class="active" <?php }?>><a href="contact.php">Contact</a></li>
 
                     </ul>
                 </div><!-- /.nav-collapse -->
