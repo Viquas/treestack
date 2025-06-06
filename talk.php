@@ -24,7 +24,7 @@ $nav = 1;
   </head>
   <body ng-app="main" ng-controller="talkController">
 
- <? include 'header.php';?>
+ <?php include 'header.php';?>
 
 
 
@@ -160,7 +160,7 @@ $nav = 1;
 </div>
 
 
-  <? include 'footer.php';?>
+  <?php include 'footer.php';?>
 
 </body>
 
@@ -199,16 +199,17 @@ $nav = 1;
           }
 
           else{
+              var domains = [];
               if( $scope.phoneSelect ){
-                $scope.domain = 'Phone';
+                domains.push('Phone');
               }
               if( $scope.webSelect ){
-                $scope.domain = $scope.domain + ', Web';
+                domains.push('Web');
               }
               if( $scope.designSelect ){
-                $scope.domain =  $scope.domain + ', UX';
+                domains.push('UX');
               }
-
+              $scope.domain = domains.join(', ');
               postNow();
           }
         }
